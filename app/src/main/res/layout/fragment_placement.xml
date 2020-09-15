@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.InternShipFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:id="@+id/relativeLayoutRequest"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get an Internship"
+
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="6dp"
+
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="7dp"
+
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor"
+                android:background="@drawable/spinner_bg"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Domain"
+
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+
+                android:textSize="14dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spDomain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="7dp"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Duration (in months)"
+                android:textColor="@color/white"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+
+                android:textSize="14dp" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spMonth"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btSubmit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/linear"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_design"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/relativeLayoutApplied">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/imgLogo1"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_check"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUCCESSFULLY APPLIED"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="for Android developer"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/tvDomainName1"
+                android:textSize="16dp"
+                tools:ignore="DuplicateIds" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You will receive a response on this next 96 hours. Stay Tuned"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/relativeLayoutResponse">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/imgLogo2"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_check"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for Applying for"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Development Internship"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvDomainName"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We received a huge number of enquiries."
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unfortunately, We couldn't accept yours this time"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="But don't get dishearten, you can again apply for Internship after 72 hours"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/relativeLayoutAccepted">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/imgLogo3"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_like"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONGRATULATIONS"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="26dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have been selected for"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Development Internship."
+                android:textColor="@color/white"
+                android:id="@+id/tvDomainName2"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="START DATE : 20-08-2020"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:id="@+id/tvStartDate"
+                android:layout_marginTop="70dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="END DATE : 20-12-2020"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:id="@+id/tvEndDate"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+        <ProgressBar android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/AppTheme.WhiteAccent"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    </RelativeLayout>
+
+</FrameLayout>

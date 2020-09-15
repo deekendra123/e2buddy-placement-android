@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "254445592505",
+    "firebase_url": "https://e2buddyplacementpaper.firebaseio.com",
+    "project_id": "e2buddyplacementpaper",
+    "storage_bucket": "e2buddyplacementpaper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254445592505:android:9c7c70230a02a1ec12e068",
+        "android_client_info": {
+          "package_name": "com.placement.prepare.e2buddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254445592505-nrtoqs5j0tm39trq9luj5tapfclku82i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.placement.prepare.e2buddy",
+            "certificate_hash": "cda7e1de9c2483ef579414bcffb88e65a8f443b3"
+          }
+        },
+        {
+          "client_id": "254445592505-4dgcchjaemhu90jufvg3stuqrnl3kb4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_LVBUbsA9pAfbBq03ZQ_opDQYr29IiB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254445592505-4dgcchjaemhu90jufvg3stuqrnl3kb4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
